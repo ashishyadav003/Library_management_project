@@ -12,7 +12,7 @@
 
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #e3f2fd; /* Light blue background */
         }
 
         .dashboard-container {
@@ -27,19 +27,34 @@
         .dashboard-container h2 {
             text-align: center;
             margin-bottom: 30px;
+            color: #007bff; /* Primary blue */
         }
 
         .list-group-item {
             font-size: 18px;
+            background-color: #007bff; /* Blue */
+            color: white;
+            border: none;
         }
 
         .list-group-item:hover {
-            background-color: #e2e6ea;
+            background-color: #0056b3; /* Darker blue */
         }
 
         .logout-btn {
             margin-top: 30px;
             text-align: center;
+        }
+
+        .btn-logout {
+            background-color: #0056b3; /* Dark blue */
+            border-color: #0056b3;
+            color: white;
+        }
+
+        .btn-logout:hover {
+            background-color: #003d80; /* Even darker blue */
+            border-color: #003d80;
         }
     </style>
 </head>
@@ -56,17 +71,13 @@
             <a href="reports.jsp" class="list-group-item list-group-item-action">Generate Reports</a>
             <a href="transactions.jsp" class="list-group-item list-group-item-action">Transactions</a>
         </div>
-
-        <!-- Logout Button -->
         <div class="logout-btn">
             <form action="LogoutServlet" method="get">
-                <button type="submit" class="btn btn-danger btn-block">Logout</button>
+                <button type="submit" class="btn btn-logout btn-block">Logout</button>
             </form>
         </div>
 
     </div>
-
-    <!-- Bootstrap JS and jQuery Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -74,3 +85,4 @@
 </body>
 
 </html>
+
