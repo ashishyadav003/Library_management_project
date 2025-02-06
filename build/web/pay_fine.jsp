@@ -33,6 +33,13 @@
         }
         .btn-custom {
             width: 100%;
+            background-color: #28a745; /* Green color */
+            border-color: #28a745;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
         }
     </style>
 </head>
@@ -72,7 +79,7 @@
                 </div>
 
                 <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary btn-custom">Confirm Payment</button>
+                <button type="submit" class="btn btn-custom">Confirm Payment</button>
             </form>
         </div>
     </div>
@@ -85,3 +92,4 @@
 </body>
 
 </html>
+
