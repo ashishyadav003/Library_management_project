@@ -4,16 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Login</title>
+    <title>Login Page</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e3f2fd;
+        }
+        .card {
+            width: 400px;
+            border-radius: 15px;
+            background-color: #ffffff;
+        }
+        .card-header {
+            background-color: #1565c0;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .btn-primary {
+            background-color: #1976d2;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0d47a1;
+        }
+        .form-control {
+            border: 1px solid #90caf9;
+        }
+    </style>
 </head>
-<body style="background-color: #f8f9fa;">
+<body>
 
     <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <div class="card shadow-lg" style="width: 400px; border-radius: 15px;">
-            <div class="card-header text-center bg-info text-white">
-                <h4>Library Management System</h4>
+        <div class="card shadow-lg">
+            <div class="card-header text-center">
+                <h4>Library MGMT System</h4>
                 <p class="mb-0">Login to your account</p>
             </div>
             <div class="card-body">
@@ -29,7 +55,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="role">Select Role</label>
+                        <label for="role">Role</label>
                         <select class="form-control" name="role" required>
                             <option value="user">User</option>
                             <option value="admin">Admin</option>
@@ -46,7 +72,7 @@
                 </p>
 
                 <div class="text-center mt-3">
-                    <a href="sign_up.jsp" class="btn btn-link">Don't have an account? Sign Up</a>
+                    <a href="sign_up.jsp" class="btn btn-link">You Don't have an account?, please Sign Up</a>
                 </div>
             </div>
         </div>
@@ -58,3 +84,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
